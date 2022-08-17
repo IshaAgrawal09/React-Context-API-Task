@@ -1,38 +1,53 @@
+body {
+  background-color: #f0f2f5;
+}
 .App {
+  padding: 9%;
+  margin-top: 8%;
+}
+
+table {
+  border-radius: 7px;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  /* padding: 8vh; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+select {
+  width: 98%;
+  height: 5vh;
+}
+input {
+  text-align: center;
+  width: 98%;
+  height: 5vh;
+}
+table td {
+  /* border: 1px solid; */
+  padding: 1vw;
+  width: 30vh;
+}
+table tr {  
+  /* border: 1px solid; */
+  height: 3vw;
+}
+button {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 98%;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 700px) {
+  table {
+    padding: 3%;
+    width: 90%;
   }
 }
